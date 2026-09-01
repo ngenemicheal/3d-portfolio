@@ -11,10 +11,10 @@ const navLinks = [
     name: "Skills",
     link: "#skills",
   },
-  {
-    name: "Testimonials",
-    link: "#testimonials",
-  },
+  // {
+  //   name: "Testimonials",
+  //   link: "#testimonials",
+  // },
 ];
 
 const words = [
@@ -86,6 +86,63 @@ const abilities = [
     imgPath: "/images/time.png",
     title: "On-Time Delivery",
     desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+  },
+];
+
+const projectCards = [
+  {
+    title: "Ryde",
+    description:
+      "A ride-booking experience focused on smooth trip discovery, location-aware flows, and a fast mobile-first interface.",
+    imgPath: "/images/project1.png",
+    techStack: ["React Native", "Expo", "Tailwind CSS", "PostgreSQL"],
+    githubUrl: "",
+    liveUrl: "",
+  },
+  {
+    title: "University Library Management Platform",
+    description:
+      "A production-grade library platform for browsing, borrowing, and managing books with admin-friendly workflows.",
+    imgPath: "/images/project2.png",
+    techStack: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS"],
+    githubUrl: "https://github.com/adrianhajdin/university-library-jsm",
+    liveUrl: "https://university-library-jsm.vercel.app",
+  },
+  {
+    title: "YC Directory",
+    description:
+      "A startup discovery platform where founders can publish, browse, and explore pitches with a clean modern UX.",
+    imgPath: "/images/project3.png",
+    techStack: ["Next.js 15", "React 19", "Sanity", "TypeScript"],
+    githubUrl: "https://github.com/adrianhajdin/yc_directory",
+    liveUrl: "https://yc-directory.vercel.app",
+  },
+  {
+    title: "Ryde",
+    description:
+      "A ride-booking experience focused on smooth trip discovery, location-aware flows, and a fast mobile-first interface.",
+    imgPath: "/images/project1.png",
+    techStack: ["React Native", "Expo", "Tailwind CSS", "PostgreSQL"],
+    githubUrl: "",
+    liveUrl: "",
+  },
+  {
+    title: "University Library Management Platform",
+    description:
+      "A production-grade library platform for browsing, borrowing, and managing books with admin-friendly workflows.",
+    imgPath: "/images/project2.png",
+    techStack: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS"],
+    githubUrl: "https://github.com/adrianhajdin/university-library-jsm",
+    liveUrl: "https://university-library-jsm.vercel.app",
+  },
+  {
+    title: "YC Directory",
+    description:
+      "A startup discovery platform where founders can publish, browse, and explore pitches with a clean modern UX.",
+    imgPath: "/images/project3.png",
+    techStack: ["Next.js 15", "React 19", "Sanity", "TypeScript"],
+    githubUrl: "https://github.com/adrianhajdin/yc_directory",
+    liveUrl: "https://yc-directory.vercel.app",
   },
 ];
 
@@ -274,5 +331,6 @@ export {
   socialImgs,
   techStackIcons,
   techStackImgs,
+  projectCards,
   navLinks,
 };
