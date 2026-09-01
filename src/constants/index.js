@@ -303,20 +303,29 @@ const testimonials = [
 
 const socialImgs = [
   {
-    name: "insta",
+    name: "Instagram",
     imgPath: "/images/insta.png",
+    url: "https://www.instagram.com/ngene.micheal",
   },
+  // {
+  //   name: "Facebook",
+  //   imgPath: "/images/fb.png",
+  //   url: "",
+  // },
   {
-    name: "fb",
-    imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
+    name: "X",
     imgPath: "/images/x.png",
+    url: "https://x.com/techie__mike",
   },
   {
-    name: "linkedin",
+    name: "LinkedIn",
     imgPath: "/images/linkedin.png",
+    url: "https://www.linkedin.com/in/micheal-ngene",
+  },
+  {
+    name: "WhatsApp",
+    imgPath: "/images/wa.png",
+    url: "https://wa.me/2348139194282",
   },
 ];
 
