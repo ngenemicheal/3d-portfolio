@@ -204,55 +204,59 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    title: "Software Engineer Intern",
+    company: "Leadway",
+    date: "06/2026 - Present",
+    location: "Apapa, Lagos",
+    summary:
+      "Software Engineering Intern at Leadway Assurance with hands-on experience developing technical skills in C#/.NET and DevOps practices. Currently building proficiency in software development, application development, version control, deployment processes, and DevOps practices. Demonstrates strong problem-solving abilities, willingness to learn, and an interest in building scalable and reliable software solutions. Seeking opportunities to apply and further develop technical skills in a professional software engineering environment.",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Developed and maintained software applications using C#/.NET, following best practices and industry standards.",
+      "Implemented version control systems (Git) to manage codebases and collaborate with other developers.",
+      "Managed deployment processes, ensuring smooth and secure application delivery.",
+      "Provided technical support and guidance to other developers, resolving issues and providing feedback on code quality.",
+      "Participated in code reviews and pair programming sessions to improve code quality and share knowledge.",
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    title: "Backend Developer",
+    company: "TeKrypt",
+    date: "07/2022 - 09/2023",
+    location: "Remote",
+    summary:
+      "Built various backends for frontend and mobile applications. Primarily used Laravel while also creating a few APIs with Node and Next.js.",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Developed a backend in Laravel for a football club's Next.js website to manage team details, ticketing, and match schedules.",
+      "Integrated API Sports and Paystack for real-time data fetching and secure payment processing.",
+      "Implemented database design and optimization strategies to ensure efficient data retrieval and storage.",
+      "Collaborated with cross-functional teams to ensure smooth integration of backend components with frontend applications.",
     ],
   },
   {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    title: "Full Stack Engineer (Freelance)",
+    company: "Independent",
+    date: "2018 - Present",
+    location: "Remote",
+    summary:
+      "After completing my internship, I started developing websites, software, and even mobile applications of various scales.",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Music Player App (React-Native) for a Computer Science Final Year Student.",
+      "Portfolio Website (Laravel) for a Graphics Designer.",
+      "Small Scale Ecommerce Website (Laravel) for a Food Seller.",
     ],
   },
-];
-
-const expLogos = [
   {
-    name: "logo1",
-    imgPath: "/images/logo1.png",
-  },
-  {
-    name: "logo2",
-    imgPath: "/images/logo2.png",
-  },
-  {
-    name: "logo3",
-    imgPath: "/images/logo3.png",
+    title: "Intern - Web Developer",
+    company: "TEMF",
+    date: "05/2017 - 02/2018",
+    location: "Remote",
+    summary:
+      "Worked on legacy PHP systems, performance optimization, and cross-team feature delivery.",
+    responsibilities: [
+      "Maintained and enhanced legacy PHP software, ensuring functionality and security improvements.",
+      "Managed website performance and troubleshooting issues, improving page load speeds by optimizing PHP code and database queries.",
+      "Worked closely with senior developers to resolve bugs and deploy feature updates.",
+    ],
   },
 ];
 
@@ -335,7 +339,6 @@ export {
   logoIconsList,
   counterItems,
   expCards,
-  expLogos,
   testimonials,
   socialImgs,
   techStackIcons,
