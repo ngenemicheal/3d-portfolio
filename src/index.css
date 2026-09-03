@@ -426,23 +426,118 @@ section {
   }
 
   .tech-card-animated-bg {
-    @apply absolute left-0 bottom-[-100%] w-full h-full bg-[#2D3240] group-hover:bottom-0 transition-all duration-700;
+    @apply absolute left-0 bottom-[-100%] w-full h-full bg-[#2D3240] group-hover:bottom-0 transition-all duration-700 opacity-0;
   }
 
   .tech-card-content {
-    @apply flex flex-col md:justify-center items-center xl:gap-5 xl:h-[50vh] overflow-hidden relative z-10 group-hover:cursor-grab;
+    @apply flex flex-col md:justify-center items-center xl:gap-5 overflow-hidden relative z-10 group-hover:cursor-grab opacity-0 pointer-events-none;
 
     & p {
-      @apply text-lg 2xl:text-2xl pb-5 xl:pb-0 font-semibold text-white-50 text-center;
+      @apply text-lg 2xl:text-2xl pb-5 xl:pb-0 font-semibold text-white-50 text-center opacity-0;
     }
   }
 
   .tech-grid {
-    @apply grid xl:grid-cols-5 md:grid-cols-3 grid-cols-1 xl:gap-16 md:gap-10 gap-5 mt-16;
+    @apply hidden;
   }
 
   .tech-icon-wrapper {
-    @apply flex justify-center items-center w-52 h-60 relative;
+    @apply hidden;
+  }
+
+  .tech-stack-grid {
+    @apply grid grid-cols-3 md:grid-cols-5 xl:grid-cols-8 gap-3 md:gap-4 xl:gap-5 mt-10 md:mt-12;
+  }
+
+  .tech-skill-card {
+    @apply relative overflow-hidden rounded-2xl bg-black-100/40 backdrop-blur-sm;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+
+  .tech-skill-card-bg {
+    @apply pointer-events-none absolute inset-0 rounded-2xl transition-opacity duration-500 ease-out;
+    background:
+      radial-gradient(circle at top right, rgba(98, 224, 255, 0.16), transparent 60%),
+      radial-gradient(circle at bottom left, rgba(253, 92, 121, 0.14), transparent 58%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0) 70%);
+    opacity: 0.7;
+  }
+
+  .tech-skill-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.42);
+  }
+
+  .tech-skill-card:hover .tech-skill-card-bg {
+    opacity: 1;
+  }
+
+  .tech-skill-card:hover .tech-skill-media-image {
+    transform: scale(1.08);
+    filter: drop-shadow(0 10px 18px rgba(98, 224, 255, 0.3));
+  }
+
+  .tech-skill-card-inner {
+    @apply relative z-10 flex flex-col items-center p-3 md:p-4 h-full text-center gap-3 md:gap-4;
+  }
+
+  .tech-skill-card-header {
+    @apply flex items-center justify-center w-full;
+  }
+
+  .tech-skill-card-title {
+    @apply text-white font-medium text-[11px] sm:text-xs md:text-sm leading-tight;
+  }
+
+  .tech-skill-media-shell {
+    @apply relative rounded-2xl overflow-hidden border border-black-50/80 w-full;
+    background:
+      radial-gradient(circle at 20% 10%, rgba(98, 224, 255, 0.14), transparent 55%),
+      radial-gradient(circle at 80% 90%, rgba(253, 92, 121, 0.16), transparent 55%),
+      linear-gradient(180deg, rgba(19, 23, 35, 0.9), rgba(10, 13, 20, 0.95));
+  }
+
+  .tech-skill-media-frame {
+    @apply w-full;
+    aspect-ratio: 1 / 1;
+    max-height: 84px;
+  }
+
+  .tech-skill-media-inner {
+    @apply w-full h-full flex items-center justify-center;
+    padding: 0.75rem;
+  }
+
+  .tech-skill-media-image {
+    @apply select-none;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.4s ease, filter 0.4s ease;
+  }
+
+  .tech-skill-media-fallback {
+    @apply flex items-center justify-center rounded-xl border border-black-50 text-white-50 font-semibold;
+    width: 44px;
+    height: 44px;
+    background:
+      radial-gradient(circle at 30% 20%, rgba(98, 224, 255, 0.22), transparent 60%),
+      radial-gradient(circle at 70% 80%, rgba(253, 92, 121, 0.2), transparent 60%),
+      rgba(12, 14, 21, 0.88);
+  }
+
+  .tech-skill-media-fallback-initials {
+    @apply text-sm;
+    letter-spacing: 0.06em;
+  }
+
+  @media (max-width: 639px) {
+    .tech-skill-media-frame {
+      max-height: 70px;
+    }
   }
 
   form {
