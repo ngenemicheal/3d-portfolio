@@ -9,6 +9,7 @@ import ShowcaseSection from "./sections/ShowcaseSection";
 import FeatureCards from "./sections/FeatureCards";
 import Navbar from "./components/NavBar";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const App = () => (
   <>
@@ -23,6 +24,7 @@ const App = () => (
     <Contact />
     <Footer />
     <Analytics />
+    <SpeedInsights />
   </>
 );
 
